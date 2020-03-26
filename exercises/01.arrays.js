@@ -25,3 +25,11 @@
  * @do
  * include this file in a new pull request
  */
+
+
+ git add . 
+ git commit -m ' ... '
+ git pull upstream master
+
+
+ 
