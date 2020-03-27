@@ -11,6 +11,8 @@
  * create an arrays of names
  */
 
+console.log(names);
+
 /**
  * @description
  * access the first item in the array above
@@ -23,13 +25,5 @@
 
 /**
  * @do
- * include this file in a new pull request
+ * include this file in a new commit and push 
  */
-
-
- git add . 
- git commit -m ' ... '
- git pull upstream master
-
-
- 
