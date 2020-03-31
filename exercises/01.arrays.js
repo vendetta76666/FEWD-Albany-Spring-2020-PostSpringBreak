@@ -18,13 +18,13 @@ let names = ['Frank', 'Tom', 'Judy']
  * access the first item in the array above
  */
 
- console.log(names[0])
+console.log(names[0]) //Frank
 
 /**
  * @description
  * access the last character in the first item in the array above
  */
-console.log(names[0][0])
+console.log(names[0][0]) //F
 /**
  * @do
  * include this file in a new commit and push 

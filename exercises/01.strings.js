@@ -58,6 +58,7 @@ var lastName = "Jones"
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat
  */
 var fullName = firstName + ' ' + middleName + ' ' + lastName
+console.log(fullName)
 /**
  * @do
  * include this file in a new commit and push
