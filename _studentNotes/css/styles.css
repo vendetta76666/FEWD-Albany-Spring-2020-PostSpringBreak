@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&display=swap");
+
+:root {
+  --shadow-light: 0 5px 12px rgba(0, 0, 0, 0.15);
+  --shadow-dark: 0 5px 12px rgba(0, 0, 0, 0.35);
+
+  --border-sm: 1px solid #888;
+  --border-md: 3px solid #888;
+  --border-lg: 5px solid #888;
+  --border-xl: 7px solid #888;
+}
+
+body {
+  font: 400 1.2em/ 1.4em "Open Sans";
+  margin: 0;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* **************** */
+/* **** HEADER **** */
+/* **************** */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0;
+  /* background-color: #999; */
+  margin-bottom: 0;
+  color: #eee;
+}
+
+code {
+  font-family: monospace;
+  font-weight: 600;
+  padding: 2px 5px;
+  border: 1px solid #333;
+  color: #333;
+  background: #f1f1ef;
+  border-radius: 3px;
+  box-shadow: var(--shadow-light);
+}
+
+.img-wrapper {
+  width: 65px;
+  float: left;
+  margin-right: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-bottom: 1px solid #9999;
+  box-shadow: var(--shadow-dark);
+  background-image: linear-gradient(rgba(2, 2, 2, 0.699), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-position: center;
+  /* background-repeat: none; */
+  background-size: cover;
+  /* height: 60px; */
+}
+
+header::after,
+h1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* **************** */
+/* ***** MAIN ***** */
+/* **************** */
+
+main {
+  width: calc(100% - 150px);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+span {
+  display: inline-block;
+}
