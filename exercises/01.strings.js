@@ -21,7 +21,9 @@
  * @description
  * create three varibles using the var, let, and const key words
  */
-
+var var1
+const var2
+let var3
 /////////////////////////
 //////// Strings ////////
 /////////////////////////
@@ -37,26 +39,25 @@
  * ie: var firstName = "your first name"
  *
  */
-
-// let firstName = "";
+var firstName = "Mike"
 
 /**
  * @description
  * Create a variable called middleName and set the value to your middle name.
  */
-
+var middleName = "Bryan"
 /**
  * @description
  * Create a variable called lastName and set the value to your last name.
  */
-
+var lastName = "Jones"
 /**
  * @description
  * Create a variable called fullName. Assign it the values of firstName, middleName, and lastName
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat
  */
-
+var fullName = firstName + ' ' + middleName + ' ' + lastName
 /**
  * @do
  * include this file in a new commit and push
