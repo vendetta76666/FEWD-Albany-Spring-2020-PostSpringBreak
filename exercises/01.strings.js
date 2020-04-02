@@ -22,7 +22,7 @@
  * create three varibles using the var, let, and const key words
  */
 var var1
-const var2
+const var2 = 3
 let var3
 /////////////////////////
 //////// Strings ////////

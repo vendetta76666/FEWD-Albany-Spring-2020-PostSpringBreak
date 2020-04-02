@@ -19,11 +19,16 @@
  */
 
 // var fullNameArray = [firstName, middleName, lastName];
+// var fullNameArray = [ "Michael", "Bryan", "Jones" ];
 
-function createFullNameArray() {
+function createFullNameArray(firstN, middleN, lastN) {
+  var fullNameArray = [ ] 
+  fullNameArray.push(firstN, middleN, lastN)
   return fullNameArray;
 }
 
+var fullNameArray = createFullNameArray("Michael", "Bryan", "Jones")
+console.log(fullNameArray)
 /**
  * Access the values of your first, middle and last names from fullNameArray. Store the results in a greeting.
  * ie: var greeting = "hello, my name is @string @string @string ";
@@ -34,8 +39,14 @@ function createFullNameArray() {
  */
 
 function createGreeting(fName, mName, lName) {
+  var fullNameArray = [ ]
+  fullNameArray.push(fName, mName, lName)
+  var greeting = 'Hello my name is ' + fullNameArray[0] + ' ' + fullNameArray[1] + ' ' + fullNameArray[2]
   return greeting;
 }
+var greeting = createGreeting("Michael", "Bryan", "Jones")
+console.log(greeting)
+
 
 /**
  * @description
@@ -44,9 +55,14 @@ function createGreeting(fName, mName, lName) {
  * @returns {Array} array
  */
 
-function topFiveTakeOutFoods() {
+function topFiveTakeOutFoods(first, second, third, fourth, fifth) {
+  var takeoutFoods =  []
+  takeoutFoods.push(first, second, third, fourth, fifth)
   return takeoutFoods;
 }
+
+var foods = topFiveTakeOutFoods("Pizza", "Chicken Wings", "Salads", "Banana Cream Pie", "Rice Pudding")
+console.log(foods)
 
 /**
  * @description
@@ -55,8 +71,12 @@ function topFiveTakeOutFoods() {
  * @return {String} string
  */
 
-function removeFirstItem() {}
-
+function removeFirstItem(foodArray) {
+  foodArray.pop()
+  return foodArray
+}
+var removedItem = removeFirstItem(foods)
+console.log(removedItem)
 /**
  * @description
  * Add a new item to the beginning of the takeout array.
@@ -64,7 +84,12 @@ function removeFirstItem() {}
  * @returns {String} string
  */
 
-function addNewItemToBeginning() {}
+function addNewItemToBeginning(foodArray, addedItem) {
+  foodArray.push(addedItem)
+  return foodArray
+}
+var addedItem = addNewItemToBeginning(foods, "Strawberries")
+console.log(addedItem)
 
 /**
  * @description
@@ -73,7 +98,13 @@ function addNewItemToBeginning() {}
  * @returns {String} string
  */
 
-function removeItemFromEnd() {}
+function removeItemFromEnd(foodArray) {
+  foodArray.pop()
+  return foodArray
+}
+
+var itemRemoved = removeItemFromEnd(foods)
+console.log(itemRemoved)
 
 /**
  * @description
@@ -82,7 +113,12 @@ function removeItemFromEnd() {}
  * @returns {String} string
  */
 
-function addItemToEnd() {}
+function addItemToEnd(foodArray, itemAdded) {
+  foodArray.push(itemAdded)
+  return foodArray
+}
+var itemAdded = addItemToEnd(foods, "Octopus")
+console.log(itemAdded)
 
 /**
  * @description
@@ -99,8 +135,17 @@ function createSubArray() {}
  *
  * @returns {Array} array
  */
+function createNewArray(theArray) {
+  var arrayLength = theArray.length
+  var lastThree = [ ]
+  lastThree.push(theArray[arrayLength - 3])
+  lastThree.push(theArray[arrayLength - 2])
+  lastThree.push(theArray[arrayLength - 1])
+  return lastThree
+}
 
-function createNewArray() {}
+var lastThree = createNewArray(foods)
+console.log(lastThree)
 
 /**
  * @description
@@ -108,7 +153,13 @@ function createNewArray() {}
  *
  * @returns {String} string
  */
-function createCommaDelimitedString() {}
+function createCommaDelimitedString(foodArray) {
+  var returnArray = foodArray.toString(",")
+  return returnArray
+}
+
+var stringFood = createCommaDelimitedString(foods)
+console.log(stringFood)
 
 /**
  * @do

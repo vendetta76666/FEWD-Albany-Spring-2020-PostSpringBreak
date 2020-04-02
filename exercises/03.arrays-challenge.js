@@ -10,17 +10,26 @@
  * @description
  * create and array with 5 names
  */
+var fiveNames = [ "Sam", "Mike", "Oscar", "Babs", "Alex" ]
 
 /**
  * @description
  * use a for loop to create a copy of the names array
  */
+var newArray = [ ]
+ for ( i = 0; i < fiveNames.length; i++ ) {
+  newArray.push(fiveNames[i])
+ }
+console.log(newArray)
 
 /**
  * @description
  * add a sixth name to the second index position of the names array.
  * store your resultes in a new array
- * /
+ **/
+
+fiveNames.splice(1, 0, "Tom")
+console.log(fiveNames)
 
 /**
  * @description
@@ -30,7 +39,7 @@
  * save your results to a new array
  */
 
-let states = [
+var states = [
   "alabama",
   "alaska",
   "arizona",
@@ -83,4 +92,20 @@ let states = [
   "wyoming"
 ];
 
+var newArray = [ ]
 
+for (i = 0; i < states.length; i++){
+  var firstUpperLetter = states[i][0].toUpperCase() 
+  var restOfEachState = states[i].slice(-(states[i].length - 1))
+  var upperCaseState = firstUpperLetter + restOfEachState
+  newArray.push(upperCaseState)
+}
+console.log(newArray)
+
+// for (i = 0; i < states.length; i++) {
+//    var firstUpperLetter = states[i][0].toUpperCase() 
+//    states[i].length
+//    states.splice(i[0],0,firstUpperLetter)
+//    console.log(states)
+// }
+console.log(states)
