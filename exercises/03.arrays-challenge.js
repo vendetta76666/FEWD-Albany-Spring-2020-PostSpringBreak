@@ -92,12 +92,22 @@ var states = [
   "wyoming"
 ];
 
-var newArray = [ ]
+var newArray = [ ] //define new array to work with
 
-for (i = 0; i < states.length; i++){
-  var firstUpperLetter = states[i][0].toUpperCase() 
-  var restOfEachState = states[i].slice(-(states[i].length - 1))
-  var upperCaseState = firstUpperLetter + restOfEachState
-  newArray.push(upperCaseState)
+for (i = 0; i < states.length; i++){  //for loop
+  if (states[i].indexOf(' ') != -1) { //this looks for index of to not return a value of -1 which indicates two words
+    var index = states[i].indexOf(' ') + 1 //find the index of ' ' and add one to select second word first letter
+    var slice = states[i].slice(index + 1) //slice starting from the first letter second word forward ingoring first character
+    var upper = states[i][index].toUpperCase() //uppercase character second word first letter
+    var firstUpperLetter = states[i][0].toUpperCase() //first word first letter to uppercase
+    var restOfEachState = states[i].slice(1,index)  //rest of the first word, minus the first character
+    var upperCaseState = firstUpperLetter + restOfEachState + upper + slice //concat all the items we have found
+    newArray.push(upperCaseState) //push two word state to array
+  } else { //much simpler for one word states
+    var firstUpperLetter = states[i][0].toUpperCase() //find first letter of one word state and make it uppercase
+    var restOfEachState = states[i].slice(-(states[i].length - 1)) //slice from the end of the word to just before the first letter
+    var upperCaseState = firstUpperLetter + restOfEachState //concat strings to make whole state with uppercase
+    newArray.push(upperCaseState) //push single word state to array
+  }
 }
 console.log(newArray)
