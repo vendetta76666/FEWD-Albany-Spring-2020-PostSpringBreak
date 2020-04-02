@@ -101,11 +101,3 @@ for (i = 0; i < states.length; i++){
   newArray.push(upperCaseState)
 }
 console.log(newArray)
-
-// for (i = 0; i < states.length; i++) {
-//    var firstUpperLetter = states[i][0].toUpperCase() 
-//    states[i].length
-//    states.splice(i[0],0,firstUpperLetter)
-//    console.log(states)
-// }
-console.log(states)
