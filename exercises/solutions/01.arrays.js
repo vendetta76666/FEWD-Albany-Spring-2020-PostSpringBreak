@@ -10,25 +10,27 @@
  * @description
  * create an arrays of names
  */
-let names = ['Frank', 'Tom', 'Judy']
 
-<<<<<<< HEAD
+let names = ["mike", "john", "bella", "ryan", "sandra"];
+console.log(names);
 
-=======
->>>>>>> 3de47c3b034aefbd44d9ecc106f5167dca92b717
 /**
  * @description
  *
  * access the first item in the array above
  */
 
-console.log(names[0]) //Frank
+ let firstItem = names[0]
+ console.log(firstItem);
+ 
 
 /**
  * @description
  * access the last character in the first item in the array above
  */
-console.log(names[0][0]) //F
+
+let lastItemInArray = names[names.length -1]
+console.log(lastItemInArray)
 /**
  * @do
  * include this file in a new commit and push
