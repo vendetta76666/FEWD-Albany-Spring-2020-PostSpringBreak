@@ -93,20 +93,20 @@ var states = [
 ];
 
 var newArray = [ ] //define new array to work with
-var index
-var slice
+var secondWordIndex
+var secondWordSlice
 var firstUpperLetter
 var restOfEachState
 var upperCaseState
 
 for (i = 0; i < states.length; i++){  //for loop
   if (states[i].indexOf(' ') != -1) { //this looks for index of to not return a value of -1 which indicates two words
-    index = states[i].indexOf(' ') + 1 //find the index of ' ' and add one to select second word first letter
-    slice = states[i].slice(index + 1) //slice starting from the first letter second word forward ingoring first character
-    upper = states[i][index].toUpperCase() //uppercase character second word first letter
+    secondWordIndex = states[i].indexOf(' ') + 1 //find the index of ' ' and add one to select second word first letter
+    secondWordSlice = states[i].slice(secondWordIndex + 1) //slice starting from the first letter second word forward ingoring first character
+    secondUpperLetter = states[i][secondWordIndex].toUpperCase() //uppercase character second word first letter
     firstUpperLetter = states[i][0].toUpperCase() //first word first letter to uppercase
-    restOfEachState = states[i].slice(1,index)  //rest of the first word, minus the first character
-    upperCaseState = firstUpperLetter + restOfEachState + upper + slice //concat all the items we have found
+    restOfEachState = states[i].slice(1,secondWordIndex)  //rest of the first word, minus the first character
+    upperCaseState = firstUpperLetter + restOfEachState + secondUpperLetter + secondWordSlice //concat all the items we have found
     newArray.push(upperCaseState) //push two word state to array
   } else { //much simpler for one word states
     firstUpperLetter = states[i][0].toUpperCase() //find first letter of one word state and make it uppercase
