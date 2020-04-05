@@ -19,7 +19,7 @@
 /**
  * @description
  * add a sixth name to the second index position of the names array.
- * store your resultes in a new array
+ * store your results in a new array
  * /
 
 /**
@@ -34,7 +34,7 @@ let states = [
   "alabama",
   "alaska",
   "arizona",
-  "arkansas",
+  "arkansas", 
   "california",
   "colorado",
   "connecticut",
@@ -82,5 +82,3 @@ let states = [
   "wisconsin",
   "wyoming"
 ];
-
-

@@ -89,3 +89,16 @@ main {
 span {
   display: inline-block;
 }
+
+
+.js {
+  padding: 40px
+}
+.hot {
+  background: rgb(255, 79, 48);
+}
+
+.cool {
+  background-color: rgb(18, 85, 124);
+
+}

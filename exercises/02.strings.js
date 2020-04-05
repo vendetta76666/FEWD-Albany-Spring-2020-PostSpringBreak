@@ -34,8 +34,6 @@ console.log(lastLetterOfFullName);
  * create a substring from the last 5 characters
  */
 
-let lastFive = fullName.split(fullName.charAt(fullName.lastIndexOf("a"))).pop();
-console.log(lastFive);
 /**
  * @do
  * include this file in a new commit
