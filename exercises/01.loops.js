@@ -1,6 +1,7 @@
 /**
  * for each item in the contacts array
- * print
+ * print each item including the nested objects
+ * Hint: you may need a second loop to print both phone numbers
  *
  */
 
