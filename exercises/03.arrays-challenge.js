@@ -30,6 +30,10 @@ console.log(newArray)
 
 fiveNames.splice(1, 0, "Tom")
 console.log(fiveNames)
+ 
+ 
+//  * store your results in a new array
+//  * 
 
 /**
  * @description
@@ -43,7 +47,7 @@ var states = [
   "alabama",
   "alaska",
   "arizona",
-  "arkansas",
+  "arkansas", 
   "california",
   "colorado",
   "connecticut",
